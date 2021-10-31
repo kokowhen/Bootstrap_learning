@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>复选框</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 复选框和单选框的设置是差不多的 -->
+    <!-- 1.复选框 -->
+    <!-- 原生CSS复选框 -->
+    <input type="checkbox" name="hobby">Singing
+    <input type="checkbox" name="hobby">Dance
+    <!-- Bootstrap提供的复选框样式 -->
+    <!-- 垂直方向显示复选框.checkbox -->
+    <div class="checkbox">
+        <label for=""><input type="checkbox">Singing</label>
+    </div>
+    <div class="checkbox">
+        <label for=""><input type="checkbox">Dance</label>
+    </div>
+    <!-- 水平方向显示复选框label标签设置.checkbox-inline -->
+    <label class="checkbox-inline" for=""><input type="checkbox">Singing</label>
+    <label class="checkbox-inline" for=""><input type="checkbox">Dance</label>
+    <hr>
+    <!-- 2.单选框 -->
+    <!-- 原生CSS单选框：文字和前面的选择框不对齐 -->
+    <label for=""><input type="radio">male</label>
+    <label for=""><input type="radio">female</label>
+    <!-- 水平显示单选框 -->
+    <div class="radio">
+        <label for=""><input type="radio">male</label>
+        <label for=""><input type="radio">female</label>
+    </div>
+    <!-- 垂直显示单选框：div设置.radio -->
+    <div class="radio">
+        <label for=""><input type="radio">male</label>
+    </div>
+    <div class="radio">
+        <label for=""><input type="radio">female</label>
+    </div>
+    <!-- 水平显示单选框：.radio-line -->
+    <label class="radio-inline" for=""><input type="radio">male</label>
+    <label class="radio-inline" for=""><input type="radio">female</label>
+</body>
+
+</html>

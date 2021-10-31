@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>表单-输入框；下拉框；文本域</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 原生的表单 -->
+    <!-- 输入框 -->
+    <input type="text">
+    <br>
+    <!-- 下拉框 -->
+    <select name="" id="">
+        <option value="">七里香</option>
+        <option value="">以父之名</option>
+        <option value="">爱在西元前</option>
+        <option value="">龙卷风</option>
+    </select>
+    <br>
+    <!-- 文本域 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <hr>
+    <!-- Bootstrap表单 -->
+    <!-- 1.输入框 -->
+    <!-- .form-control默认情况会占用一行
+            .input-lg大的输入框
+            .input-sm小的输入框
+     -->
+    <input class="form-control" type="text">
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <input class="form-control" type="text">
+            <br>
+            <input class="input-lg" type="text">
+            <br>
+            <input class="input-sm" type="text">
+        </div>
+    </div>
+    <input class="input-lg" type="text">
+    <input class="input-sm" type="text">
+    <br>
+    <!-- 2.下拉框.form-control -->
+    <div class="row">
+        <div class="col-md-2">
+            <select class="form-control" name="" id="">
+                <option value="">歌曲</option>
+                <option value="">七里香</option>
+                <option value="">以父之名</option>
+                <option value="">爱在西元前</option>
+                <option value="">龙卷风</option>
+            </select>
+            <br>
+            <!-- 多选下拉框multiple="multiple" -->
+            <select class="form-control" multiple="multiple" name="" id="">
+                <option value="">歌曲</option>
+                <option value="">七里香</option>
+                <option value="">以父之名</option>
+                <option value="">爱在西元前</option>
+                <option value="">龙卷风</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <!-- 3.文版域.form-control -->
+    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <textarea class="textarea-sm" name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <textarea class="" name="" id="" cols="30" rows="10"></textarea>
+</body>
+
+</html>
