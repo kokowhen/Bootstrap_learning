@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>栅格网格系统</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <style>
+        .col-md-4{
+            background-color: gold;
+        }
+        .col-md-8{
+            background-color: greenyellow;
+        }
+        .col-md-12{
+            background-color: green;
+        }
+        .col-xs-12{
+            background-color: red;
+        }
+        .col-xs-4{
+            background-color: gray;
+        }
+        .col-xs-8{
+            background-color: blue;
+        }
+        .col-md-1{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 使用固定宽度的.container布局容器 -->
+    <div class="container">
+        <!-- 行元素.row -->
+        <div class="row">
+            <!-- 列元素.col-xs-数值、.col-sm-数值、.col-md-数值、.col-lg-数值 -->
+            <!-- xs/sm/md/lg根据屏幕的分辨率进行选择 -->
+            <!-- 分的栅格总数不能超过12 -->
+            <!-- 装不下的会自动换行 -->
+            <!-- -col列组合 -->
+            <div class="col-md-4">md-4</div>
+            <div class="col-md-8">md-8</div>
+            <div class="col-md-12">md-12</div>
+            <div class="col-xs-4">xs-4</div>
+            <div class="col-xs-8">xs-8</div>
+            <div class="col-xs-12">xs-12</div>
+            <div class="col-md-4">1/3</div>
+            <div class="col-md-4">2/3</div>
+            <div class="col-md-4">3/3</div>
+            <hr>
+        </div>
+        <!-- -offset列偏移 -->
+        <!-- 如果我们不想让创建的格子相邻贴在一起，那么可以用这个方法 -->
+        <!-- 同样的，一行里总的栅格数量不能超过12 -->
+        <div class="row">
+            <div class="col-md-1">md-1</div>
+            <div class="col-md-1 col-md-offset-1">md-1</div>
+            <div class="col-md-1 col-md-offset-1">md-1</div>
+            <div class="col-md-1">md-1</div>
+            <div class="col-md-1 col-md-offset-5">md-1</div>
+        </div>
+    </div>
+</body>
+
+</html>

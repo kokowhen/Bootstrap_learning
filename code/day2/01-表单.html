@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- label和input等控件都放到.form-group的div里面 -->
+    <!-- .form-control是加在input控件里的类，能够让控件独占一行 -->
+    <!-- 垂直排列的表单 -->
+    <form action="">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="emial" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="file">File</label>
+            <input type="file" id="file">
+        </div>
+    </form>
+    <!-- 水平排列的表单 -->
+    <!-- .form-inline是加在form里的类，能够让控件排列在一行 -->
+    <form action="" class="form-inline">
+        <div class="form-group">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="mail" placeholder="Email">
+        </div>
+        <button type="submit" class="btn btn-default">Invitation</button>
+    </form>
+</body>
+
+</html>
