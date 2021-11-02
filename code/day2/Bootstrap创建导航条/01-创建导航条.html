@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Bootstrap中的导航条组件 -->
+    <!-- 标签页 -->
+    <h2>标签页</h2>
+    <hr>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Message</a></li>
+    </ul>
+    <!-- 胶囊式标签页 -->
+    <h2>胶囊式标签页</h2>
+    <hr>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Message</a></li>
+    </ul>
+    <!-- 胶囊式标签页垂直显示 -->
+    <h2>胶囊式标签页垂直显示</h2>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Message</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 两端对齐的标签页 -->
+    <h2>两端对齐的标签页</h2>
+    <hr>
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Message</a></li>
+    </ul>
+    <!-- 两端对齐的胶囊式标签页 -->
+    <h2>两端对齐的胶囊式标签页</h2>
+    <hr>
+    <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Message</a></li>
+    </ul>
+    <hr>
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Message</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <!-- 禁用的链接 -->
+    <h2>禁用的链接</h2>
+    <hr>
+    <ul class="nav nav-pills">
+        <li class="active disabled"><a href="#">Home</a></li>
+        <li class="disabled"><a href="#">Profile</a></li>
+        <li><a href="#">Message</a></li>
+    </ul>
+    <!-- 添加下拉菜单 -->
+    <!-- 带下拉菜单的标签页 -->
+    <!-- 设计的时候自己去复制修改就行 -->
+    <h2>带下拉菜单的标签页</h2>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Message</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Drop <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h2>带下拉菜单的胶囊标签页</h2>
+    <hr>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Help</a></li>
+        <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </li>
+    </ul>
+</body>
+
+</html>
